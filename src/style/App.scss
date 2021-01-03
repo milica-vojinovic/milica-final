@@ -1,0 +1,155 @@
+$iconColor1: rgb(74, 135, 193);
+$iconColor2: rgb(159, 159, 159);
+$iconColor3: rgb(135, 174, 211);
+$textColor1: rgb(145, 145, 145);
+
+body {
+  font-family: Verdana, Calibri, Segoe, “Segoe UI”, Optima, Arial, sans-serif;
+}
+
+.App {
+  padding: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px rgb(225, 234, 252) solid;
+  padding: 10px 0px;
+  font-size: 14pt;
+  color: $textColor1;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+
+  i {
+    color: $iconColor2;
+  }
+}
+
+.header-options {
+  display: flex;
+
+  i {
+    color: $iconColor1;
+  }
+}
+
+i {
+  margin: 0px 10px 0px 20px;
+}
+
+.location {
+  margin: 0px 20px;
+}
+
+.header-bottom {
+  border-bottom: 2px rgb(225, 234, 252) solid;
+  color: $textColor1;
+  font-weight: bold;
+}
+
+.new-line {
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
+
+  > div {
+    padding: 20px 10px 10px;
+  }
+
+  .header-name {
+    flex-grow: 1;
+  }
+
+  .header-type {
+    width: 80px;
+    text-align: center;
+  }
+
+  .header-date,
+  .header-option {
+    text-align: center;
+  }
+
+  .header-date {
+    width: 140px;
+  }
+
+  i {
+    color: $iconColor3;
+  }
+}
+
+.popup-holder {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: block;
+}
+
+.popup {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 7px;
+  background: #fff;
+  margin: 30px auto 0;
+  padding: 6px;
+  box-shadow: 2px 2px 8px $iconColor1;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 28px 26px 33px 25px;
+}
+
+.option {
+  color: $textColor1;
+  padding: 0px 5px;
+  font-size: 12px;
+
+  &:hover {
+    text-shadow: 0px 0px 1px rgb(184, 184, 184);
+  }
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: center;
+}
+
+.new-header-name {
+  margin-left: 20px;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.input {
+  margin-right: 20px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  color: $iconColor1;
+
+  &:hover {
+    text-shadow: 0px 0px 1px rgb(184, 184, 184);
+  }
+}
+
+.new-click:hover {
+  text-shadow: 0px 0px 1px rgb(184, 184, 184);
+  cursor: pointer;
+}
+
+.folder-span {
+  cursor: pointer;
+}
