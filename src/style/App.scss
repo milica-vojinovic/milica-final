@@ -26,6 +26,7 @@ body {
 
   i {
     color: $iconColor2;
+    cursor: pointer;
   }
 }
 
@@ -54,7 +55,7 @@ i {
 .new-line {
   display: flex;
   margin: 10px;
-  cursor: pointer;
+  cursor: default;
 
   > div {
     padding: 20px 10px 10px;
@@ -110,6 +111,7 @@ i {
   color: $textColor1;
   padding: 0px 5px;
   font-size: 12px;
+  cursor: pointer;
 
   &:hover {
     text-shadow: 0px 0px 1px rgb(184, 184, 184);
